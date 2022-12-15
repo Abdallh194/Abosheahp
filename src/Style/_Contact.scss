@@ -1,0 +1,55 @@
+.Contact {
+  margin-top: 20px;
+  .head {
+    font-size: 35px;
+    padding: 20px 0;
+    font-weight: bold;
+    font-family: $Header-font;
+  }
+  .contactForm {
+    input {
+      margin: 20px 0;
+      height: 40px;
+      border-radius: 0;
+    }
+    #msg {
+      height: 150px;
+      resize: none;
+    }
+    .submit {
+      width: 200px;
+      text-align: center;
+      padding: 10px 0;
+      margin: 20px 0;
+      background-color: $blue-color;
+      color: white;
+      border: none;
+    }
+  }
+  .map {
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
+    display: block;
+  }
+  .details {
+    margin-left: 25px;
+    margin-top: 20px;
+    p {
+      display: block;
+      padding: 7px 0;
+      color: $blue-color;
+      a {
+        color: $blue-color;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .map {
+      width: 100%;
+    }
+    .details {
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.About {
+  margin-top: 150px;
+  padding-bottom: 150px;
+  .Box_01 {
+    position: relative;
+    text-align: center;
+    &::before {
+      position: absolute;
+      left: -133px;
+      content: "";
+      background-color: $gold-color;
+      width: 81%;
+      top: -58px;
+      height: 46%;
+      z-index: -1;
+    }
+  }
+  .header {
+    font-size: 40px;
+    padding: 20px 0;
+    font-weight: bold;
+  }
+  .desc {
+    width: 80%;
+    margin: auto;
+  }
+  .more {
+    text-align: center;
+    width: 180px;
+    padding: 10px 0;
+    font-size: 19px;
+    margin: 25px auto;
+    background-color: $gold-color;
+    color: black;
+    cursor: pointer;
+  }
+  .head {
+    font-size: 60px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  .Box_02 {
+    position: relative;
+    &::after {
+      position: absolute;
+      right: -133px;
+      content: "";
+      background-color: $gold-color;
+      width: 81%;
+      bottom: -35px;
+      height: 46%;
+      z-index: -1;
+    }
+  }
+  .AboutImg {
+    border-radius: 50%;
+    width: 75%;
+  }
+  @media (max-width: 767px) {
+    .AboutImg {
+      width: 100%;
+    }
+    .Box_01 {
+      &::before {
+        left: 0;
+      }
+    }
+    .Box_02 {
+      &::after {
+        right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.Payment {
+  .input_Custom {
+    width: 48%;
+    margin: 20px auto;
+    display: inline-block;
+    input {
+      width: 90%;
+      border-radius: 0;
+      height: 40px;
+    }
+    .wrong {
+      border-color: red;
+      border-width: 2px;
+    }
+    .true {
+      border-color: #70b703;
+      border-width: 2px;
+    }
+  }
+  #submit {
+    width: 60%;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px 0;
+    background-color: $blue-color;
+    color: white;
+    transition: 0.2s;
+  }
+  .head {
+    font-size: 30px;
+    padding: 20px 0;
+  }
+  .BillHeader {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    div {
+      padding: 3px 0;
+    }
+  }
+  .pay {
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    background-color: $blue-color;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 0;
+    cursor: pointer;
+  }
+  .infoValid {
+    background-color: $gold-color !important;
+    color: $blue-color !important;
+    font-size: 20px;
+  }
+  label {
+    font-size: 18px;
+    padding-left: 3px;
+  }
+  .error {
+    text-align: center;
+    color: red;
+  }
+  @media (max-width: 767px) {
+    .input_Custom {
+      margin: 10px auto;
+      width: 100%;
+      input {
+        width: 100%;
+        height: 50px;
+      }
+    }
+  }
+}

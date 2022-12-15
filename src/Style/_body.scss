@@ -1,0 +1,77 @@
+.body {
+  height: 600px;
+  background-size: cover;
+  background-image: url("../public/body.jpg");
+  position: relative;
+  .over-lay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 600px;
+    left: 0;
+    top: 0;
+  }
+  .head_01 {
+    font-family: $Header-font !important;
+    font-size: 90px;
+    padding: 105px 0 0 0;
+    color: $gold-color;
+  }
+  .head_02 {
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: -45px;
+  }
+  .head_03 {
+    font-size: 32px;
+    color: white;
+    margin-top: 35px;
+  }
+  .st-shop {
+    background-color: $gold-color;
+    color: black;
+    font-size: 18px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 170px;
+    display: block;
+    margin: 10px 0;
+    border-radius: 50px;
+    transition: 0.2s;
+    &:hover {
+      background-color: white;
+      color: $blue-color;
+    }
+  }
+  @media (max-width: 992px) {
+    .head_01 {
+      padding: 60px 0 0 0;
+      font-size: 73px;
+    }
+    .head_02 {
+      font-size: 75px;
+    }
+  }
+  @media (max-width: 767px) {
+    height: 650px;
+    .over-lay {
+      height: 650px;
+    }
+    .head_01 {
+      padding: 19px 0 0 0;
+      font-size: 53px;
+    }
+    .head_02 {
+      font-size: 81px;
+      line-height: 1.1;
+      margin-top: 0;
+    }
+    .st-shop {
+      margin: 20px 0;
+      font-size: 20px;
+      width: 210px;
+      border-radius: 0px;
+    }
+  }
+}

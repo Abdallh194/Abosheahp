@@ -1,0 +1,416 @@
+.Shop {
+  margin-top: 50px;
+  .ShopCard {
+    border-radius: 10px;
+    margin: 30px auto;
+    width: 30%;
+    background-color: #ddd;
+  }
+  .MostCard {
+    width: 23%;
+    margin: 45px auto;
+    background-color: $gold-color;
+    padding: 20px;
+    cursor: pointer;
+    color: $blue-color;
+    text-align: center;
+    padding-bottom: 0;
+    position: relative;
+    &::before {
+      width: 50%;
+      padding: 10px 0;
+      text-align: center;
+      position: absolute;
+      content: attr(data-discount);
+      background-color: $blue-color;
+      color: white;
+      right: 0;
+      top: -22px;
+    }
+    .img-fluid {
+      display: block;
+      margin: 20px auto;
+      height: 50%;
+    }
+    .title {
+      font-size: 25px;
+      padding: 10px 0;
+      color: $blue-color;
+      font-weight: bold;
+    }
+    .price {
+      font-weight: bold;
+      color: #564300;
+    }
+    .buy {
+      background-color: $blue-color;
+      text-align: center;
+      padding: 8px 0;
+      color: white;
+      border: 1px solid $blue-color;
+      margin: 10px 0;
+      transition: 0.2s;
+    }
+    &:hover {
+      .buy {
+        background-color: transparent;
+        color: $blue-color;
+      }
+    }
+  }
+  .head {
+    font-size: 40px;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+
+    .header {
+      width: 18%;
+    }
+  }
+  .Line {
+    height: 1px;
+    background-color: #333;
+    width: 82%;
+  }
+  .desc {
+    font-size: 25px;
+    padding: 5px 0;
+  }
+  .Featuered {
+    padding: 30px;
+    width: 49%;
+    margin: 15px auto;
+  }
+  .Left_Featuered {
+    background-color: $gold-color;
+    padding: 60px 30px;
+    color: $blue-color;
+    display: flex;
+    justify-content: space-between;
+    .upto {
+      font-size: 129px;
+      font-family: fantasy;
+      margin-top: -44px;
+    }
+    .discount {
+      font-size: 68px;
+      font-weight: bold;
+      margin-top: -18px;
+    }
+  }
+  .shop {
+    background-color: $blue-color;
+    color: white;
+    display: block;
+    width: 150px;
+    padding: 10px 0;
+    font-size: 19px;
+    text-align: center;
+    margin: 10px 0;
+    text-decoration: none;
+  }
+  .Right_Btn {
+    background-color: $gold-color;
+    color: $blue-color;
+  }
+  .Right_Featuered {
+    background-color: $blue-color;
+    padding: 20px 30px;
+    color: white;
+    img {
+      display: inline-block;
+      margin: auto;
+      width: 31%;
+    }
+    .header {
+      font-size: 33px;
+      font-weight: bold;
+    }
+    .descripton {
+      font-size: 16px;
+      color: #ddd;
+    }
+  }
+  .Bottom_Left_Box {
+    background-color: $blue-color;
+    color: white;
+  }
+  .Bottom_Left_Box,
+  .Bottom_Right_Box {
+    text-align: center;
+    padding: 0;
+    .img-fluid {
+      max-width: 50%;
+      display: block;
+      margin: auto;
+    }
+    h4 {
+      font-weight: bold;
+      padding: 20px 0;
+    }
+  }
+  .Bottom_Right_Box {
+    background-color: $gold-color;
+    color: $blue-color;
+    border-top-left-radius: 50%;
+  }
+  .icons {
+    margin: 40px 0;
+    .icon_01 {
+      background-color: $blue-color;
+      color: white;
+    }
+    .icon_02 {
+      background-color: $gold-color;
+      color: $blue-color;
+    }
+    .icon_01,
+    .icon_02 {
+      padding: 30px 0;
+      width: 23%;
+      margin: 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        font-size: 70px;
+      }
+    }
+  }
+  .BOX_Right {
+    background-color: $blue-color;
+    padding: 0;
+  }
+  .offer {
+    background-color: $blue-color;
+    margin: 40px 0;
+    justify-content: space-around;
+    align-items: center;
+    .txt_Box {
+      width: 50%;
+      padding: 20px;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 80px;
+      color: $gold-color;
+      font-family: $Header-font;
+    }
+    .disc {
+      color: white;
+      font-size: 20px;
+    }
+    .more {
+      background-color: $gold-color;
+      text-align: center;
+      width: 200px;
+      padding: 10px 0;
+      margin: 15px 0;
+      cursor: pointer;
+    }
+
+    .img_Box {
+      background-color: $gold-color;
+      width: 50%;
+    }
+    .img-fluid {
+      display: block;
+      margin: auto;
+    }
+  }
+  .options {
+    width: 60%;
+    margin: 30px 0;
+  }
+  .products {
+    background-color: $gold-color;
+    width: 23%;
+    margin: 20px auto;
+    padding: 30px 10px 10px 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    position: relative;
+    &::before {
+      width: 50%;
+      padding: 10px 0;
+      text-align: center;
+      position: absolute;
+      content: attr(data-discount);
+      background-color: $blue-color;
+      color: white;
+      right: 0;
+      top: -22px;
+    }
+    .img-fluid {
+      display: block;
+      margin: auto;
+      height: 200px;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 25px;
+      color: $blue-color;
+      padding: 10px 0;
+    }
+    .price {
+      font-weight: bold;
+      color: #564300;
+    }
+    .buy {
+      background-color: $blue-color;
+      text-align: center;
+      padding: 8px 0;
+      color: white;
+      border: 1px solid $blue-color;
+      margin: 10px 0;
+      transition: 0.2s;
+      transition: 0.2s;
+      border: 1px solid $blue-color;
+    }
+    &:hover {
+      .buy {
+        background-color: transparent;
+        color: $blue-color;
+      }
+    }
+  }
+  .SelectedCart {
+    border-color: $blue-color !important;
+  }
+  .cartIcon {
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+    font-size: 40px;
+    color: black;
+
+    &::before {
+      content: attr(data-length);
+      position: absolute;
+      background-color: red;
+      color: black;
+      width: 20px;
+      border-radius: 50%;
+      font-size: 17px;
+      text-align: center;
+      right: 10px;
+      height: 20px;
+      top: 24px;
+      font-weight: bold;
+    }
+  }
+  @media (max-width: 1300px) {
+    .Left_Featuered .upto {
+      font-size: 98px;
+    }
+    .offer .title {
+      font-size: 60px;
+    }
+  }
+  @media (max-width: 992px) {
+    .MostCard {
+      text-align: center;
+      width: 47%;
+    }
+    .Left_Featuered,
+    .MobileResize,
+    .Right_Featuered {
+      width: 100%;
+    }
+    .row {
+      padding: 0;
+    }
+    .Bottom_Left_Box,
+    .Bottom_Right_Box {
+      width: 50%;
+    }
+    .BOX_Right {
+      width: 100%;
+    }
+    .offer {
+      display: block !important;
+      .img_Box {
+        width: 100%;
+      }
+      .txt_Box {
+        width: 100%;
+      }
+      .title {
+        font-size: 34px;
+      }
+      .disc {
+        padding: 15px 0;
+        color: #b9b9b9;
+        font-size: 18px;
+      }
+      .more {
+        width: 100%;
+      }
+    }
+    .products {
+      width: 46%;
+    }
+  }
+  @media (max-width: 767px) {
+    .MostCard {
+      text-align: center;
+      width: 92%;
+      margin: 25px auto;
+      &::before {
+        width: 70%;
+      }
+    }
+    .products {
+      width: 92%;
+      .img-fluid {
+        height: auto;
+      }
+    }
+    .head .Line {
+      display: none;
+    }
+    .head .header {
+      width: fit-content;
+      padding-right: 15px;
+      border-bottom: 2px solid black;
+    }
+    .Right_Featuered {
+      margin: 0;
+      width: 100%;
+      img {
+        width: 54%;
+      }
+    }
+    .Bottom_Left_Box,
+    .Bottom_Right_Box {
+      .img-fluid {
+        max-width: 65%;
+      }
+      h4 {
+        padding: 4px;
+      }
+    }
+
+    .Left_Featuered {
+      padding-bottom: 20px;
+      margin-top: 0;
+      display: block;
+      img {
+        margin: 0px auto;
+        display: block;
+        margin-top: 29px;
+      }
+    }
+  }
+  .icons {
+    .icon_01,
+    .icon_02 {
+      width: 25%;
+      i {
+        font-size: 40px;
+      }
+    }
+  }
+}

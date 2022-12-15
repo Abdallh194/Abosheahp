@@ -1,0 +1,70 @@
+.MainNavbar {
+  background-color: $blue-color !important;
+  a {
+    color: $gold-color !important;
+    font-size: 19px;
+    padding: 10px 15px;
+    font-weight: lighter;
+  }
+  .navbar-toggler {
+    border: 1px solid $gold-color !important;
+  }
+  .menuItem {
+    display: block;
+    padding: 5px 10px;
+  }
+  .PageLogo {
+    color: white;
+    font-family: $Header-font;
+    font-size: 29px !important;
+    font-weight: bold;
+  }
+  .menu {
+    display: flex;
+    margin-top: 10px;
+    margin-left: -83px;
+    li {
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 19px;
+        padding: 16px;
+        margin: 0px 26px;
+      }
+    }
+  }
+  .input-group {
+    width: auto;
+    .form-control {
+      border-radius: 0;
+      border-top-left-radius: 0.375rem;
+      border-bottom-left-radius: 0.375rem;
+    }
+  }
+  .BtnDropMenu {
+    color: $gold-color;
+    display: none;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  @media (max-width: 992px) {
+    .menu li a {
+      font-size: 14px;
+      padding: 2px;
+      margin: 0px 20px;
+    }
+  }
+  @media (max-width: 767px) {
+    .menu {
+      display: none;
+    }
+    .BtnDropMenu {
+      display: block;
+    }
+    .form-outline,
+    .input-group {
+      width: 82%;
+    }
+  }
+}

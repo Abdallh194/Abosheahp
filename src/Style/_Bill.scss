@@ -1,0 +1,74 @@
+.Bill {
+  padding: 40px 0;
+  .CartBill {
+    justify-content: space-between;
+    background-color: $gold-color;
+    color: $blue-color;
+    padding: 10px;
+    font-weight: bold;
+  }
+  .BillHeader {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    div {
+      padding: 3px 0;
+    }
+  }
+  .BillItem {
+    justify-content: space-around;
+    background-color: $blue-color;
+    color: white;
+    border-top: 1px solid #ddd;
+    margin: 0;
+    img {
+      width: 6%;
+    }
+  }
+  .coupon {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    input {
+      width: 66%;
+      border-radius: 0;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    button {
+      width: 34%;
+      font-size: 15px;
+      border-radius: 0;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+  .pay {
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    background-color: $blue-color;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 0;
+  }
+  @media (max-width: 992px) {
+    .BillItem {
+      display: flex;
+      font-weight: lighter !important;
+      font-size: 13px;
+      img {
+        margin: 0;
+      }
+    }
+    .CartBill {
+      font-size: 12px;
+    }
+  }
+  .coupon {
+    button {
+      font-size: 12px;
+    }
+  }
+}

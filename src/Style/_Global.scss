@@ -1,0 +1,83 @@
+// Variables
+$Header-font: "Zen Dots", cursive;
+$Global-font: "Montserrat", sans-serif;
+$blue-color: #183661;
+$gold-color: #f2c119;
+p {
+  display: inline-block;
+  margin-bottom: 0 !important;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+i {
+  display: inline-block;
+}
+a {
+  font-weight: bold;
+}
+body {
+  overflow-x: hidden;
+  font-family: $Global-font;
+}
+.cus-btn {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 19px;
+}
+* {
+  font-family: $Global-font;
+}
+.copy {
+  background-color: white;
+  color: $blue-color;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px 0;
+  a {
+    font-family: $Header-font;
+    text-decoration: none;
+    color: orangered;
+  }
+}
+.ReactModal__Content {
+  height: fit-content !important;
+  width: fit-content !important;
+  position: fixed;
+  margin: 50px auto;
+  background-color: $blue-color !important ;
+  color: white !important;
+  padding: 30px;
+  text-align: center !important;
+  .ModalHead {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .confirm {
+    background-color: $gold-color;
+    text-align: center;
+    width: 110px;
+    padding: 5px 0;
+    margin: 20px auto;
+    color: $blue-color;
+    cursor: pointer;
+  }
+  i {
+    color: $gold-color;
+    font-size: 40px;
+  }
+  @media (max-width: 767px) {
+    top: 50% !important;
+    transform: translatey(-50%);
+    margin: auto;
+    .ModalHead {
+      font-size: 18px;
+    }
+  }
+}
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Kenia&display=swap"); //Header Font  "Kenia", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); //Global Font
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"); //New Font
+//'Zen Dots', cursive;
