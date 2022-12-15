@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Abosheahp/static/css/main.c930559f.css",
+    "main.js": "/Abosheahp/static/js/main.726f4d54.js",
+    "static/media/body.jpg": "/Abosheahp/static/media/body.769b3f5a151448043c79.jpg",
+    "static/media/Featured_01.png": "/Abosheahp/static/media/Featured_01.41fbf4666d954ff57c3e.png",
+    "static/media/offer.png": "/Abosheahp/static/media/offer.4cd0666505d6592afa10.png",
+    "static/media/About_02.jpg": "/Abosheahp/static/media/About_02.a78ccffd5e920ade1ba3.jpg",
+    "static/media/About_01.jpg": "/Abosheahp/static/media/About_01.9436583f17aec47f2a78.jpg",
+    "static/media/Featured_02.png": "/Abosheahp/static/media/Featured_02.99e25f3da51fff45405e.png",
+    "static/media/Featured_04.png": "/Abosheahp/static/media/Featured_04.a723df3f0e2fba0f1584.png",
+    "static/media/Featured_03.png": "/Abosheahp/static/media/Featured_03.2069c648dd1bcc45b330.png",
+    "index.html": "/Abosheahp/index.html",
+    "main.c930559f.css.map": "/Abosheahp/static/css/main.c930559f.css.map",
+    "main.726f4d54.js.map": "/Abosheahp/static/js/main.726f4d54.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c930559f.css",
+    "static/js/main.726f4d54.js"
+  ]
+}
